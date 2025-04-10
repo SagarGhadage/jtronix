@@ -31,6 +31,10 @@ const userSchema = mongoose.Schema(
         }
       }
     },
+    address:{
+      type:String,
+      trim: true,
+    },
     password: {
       type: String,required:true,minlength:8,
       validate(value) {
