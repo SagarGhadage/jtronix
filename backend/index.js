@@ -2,11 +2,12 @@ require("dotenv").config();
 
 const mongoose = require("mongoose");
 const app = require("./app");
+const config = require("./config/config");
 const PORT = process.env.PORT;
 const DB_URI = process.env.DB_URI;
 
 mongoose
-  .connect(DB_URI)
+  .connect(config.mongoose.url, config.mongoose.options)
   .then(() => {
     console.log("connected to DB");
   })
