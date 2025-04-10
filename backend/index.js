@@ -7,7 +7,7 @@ const PORT = process.env.PORT;
 const DB_URI = process.env.DB_URI;
 
 mongoose
-  .connect(config.mongoose.url, config.mongoose.options)
+  .connect(config.mongoose.url)
   .then(() => {
     console.log("connected to DB");
   })
