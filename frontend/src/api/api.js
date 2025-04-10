@@ -1,6 +1,6 @@
 import axios from "axios";
-// export const BACKEND_ENDPOINT = "https://qkart-frontend-61na.onrender.com/api/v1";
-export const BACKEND_ENDPOINT = "http://localhost:8082/v1";
+// export const BACKEND_ENDPOINT = "http://localhost:8082/v1";
+export const BACKEND_ENDPOINT = "https://jtronix-kvxp.onrender.com/v1";
 
 export const signUp = async (user) => {
     try {
